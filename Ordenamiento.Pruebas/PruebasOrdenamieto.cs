@@ -15,5 +15,29 @@ namespace Ordenamiento.Pruebas
             ordenar.Ordenar(entradas);
             CollectionAssert.AreEqual(salidaEsperada, entradas);
         }
+
+        [TestMethod]
+        public void PruebaInvertido()
+        {
+            int[] entradas = new int[] {5, 4, 3, 2, 1};
+            ordenar.Ordenar(entradas);
+            CollectionAssert.AreEqual(salidaEsperada, entradas);
+        }
+
+        [TestMethod]
+        public void PruebaFinal()
+        {
+            int[] entradas = new int[] {1, 3, 2, 4, 5};
+            ordenar.Ordenar(entradas);
+            CollectionAssert.AreEqual(salidaEsperada, entradas);
+        }
+
+        [TestMethod]
+        public void PruebaPrimero()
+        {
+            int[] entradas = new int[] {1, 3, 2, 4, 5};
+            ordenar.Ordenar(entradas);
+            CollectionAssert.AreEqual(salidaEsperada, entradas);
+        }
     }
 }
